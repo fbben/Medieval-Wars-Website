@@ -1,0 +1,154 @@
+body {
+    background-color: #101324;
+    color: white;
+    font-family: 'Outfit';
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header img{
+    width: 120px;
+    height: 70px;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* to exactly center the list between logo and download button. */
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+
+.download, .download-mw {
+    background-color: #FAAB4E;
+    padding: 10px;
+}
+
+.download{
+    border-radius: 15px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero img {
+    height: 500px;
+    width: 500px;
+}
+
+.hero .description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* to remove p default margins */
+.description p {
+    margin: 0;
+    padding: 0;
+}
+
+.description .title {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.description .motivation {
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.watch-trailer, .download-mw{
+    border-radius: 20px;
+}
+
+.watch-trailer {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.propertie{
+    display: flex;
+    gap: 40px;
+}
+.propertie img{
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 1px 4px #ffff);
+}
+
+.img-description{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    background-color: #171A2D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.developer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.developer img{
+    width: 120px;
+    height: 162px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    display: flex;
+    gap: 10px;
+}
+.email img{
+    width: 20px;
+    height: 20px;
+}
+
+/* TODO:
+- Responsiveness: FlexBox + MediaQuerries. 
+*/
