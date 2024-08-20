@@ -8,9 +8,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
-.header img{
+.header img {
     width: 120px;
     height: 70px;
 }
@@ -31,12 +32,13 @@ a {
     color: white;
 }
 
-.download, .download-mw {
+.download,
+.download-mw {
     background-color: #FAAB4E;
     padding: 10px;
 }
 
-.download{
+.download {
     border-radius: 15px;
 }
 
@@ -45,11 +47,13 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .hero img {
     height: 500px;
     width: 500px;
+    /* max-width: 100%;  */
 }
 
 .hero .description {
@@ -58,19 +62,18 @@ a {
     gap: 25px;
 }
 
-/* to remove p default margins */
-.description p {
+.description .title {
+    font-size: 60px;
+    font-weight: bold;
     margin: 0;
     padding: 0;
 }
 
-.description .title {
-    font-size: 70px;
-    font-weight: bold;
-}
-
 .description .motivation {
     font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
 
 .buttons {
@@ -79,7 +82,8 @@ a {
     font-size: 15px;
 }
 
-.watch-trailer, .download-mw{
+.watch-trailer,
+.download-mw {
     border-radius: 20px;
 }
 
@@ -89,66 +93,84 @@ a {
     padding: 10px;
 }
 
-.features{
+.features {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
-.propertie{
+
+.propertie {
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.propertie img{
+
+.propertie img {
     width: 350px;
     height: 220px;
     border-radius: 10px;
     filter: drop-shadow(2px 1px 4px #ffff);
+    max-width: 100%;
 }
 
-.img-description{
+.img-description {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
-.footer{
+.img-description-title {
+    color: #FAAB4E;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
     background-color: #171A2D;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
 }
-.information{
+
+.information {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.developer{
+
+.developer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.developer img{
+.developer img {
     width: 120px;
     height: 162px;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
 }
-.email{
+
+.email {
     display: flex;
     gap: 10px;
 }
-.email img{
+
+.email img {
     width: 20px;
     height: 20px;
 }
 
 /* TODO:
-- Responsiveness: FlexBox + MediaQuerries. 
+- Header: Java Script.
+- Chba7: shdows in buttons. Split hero and Features section. some text animations [see CSS free template site for inspirstion].
 */
