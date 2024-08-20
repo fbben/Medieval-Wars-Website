@@ -2,12 +2,14 @@ body {
     background-color: #101324;
     color: white;
     font-family: 'Outfit';
+    /* margin: 0; */
 }
 
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 16px;
 
 }
 
@@ -135,6 +137,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+
 }
 
 .information {
@@ -170,7 +173,69 @@ a {
     height: 20px;
 }
 
+.mobile-nav-bar,
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: none;
+    }
+
+    .mobile-nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 70px;
+    }
+
+    .hamburger-icon{
+        height: 40px;
+        width: 40px;
+        margin-top: 20px;
+    }
+
+    .hamburger-icon.active{
+        display: none;
+    }
+
+    .cross-icon{
+        display: none;
+        height: 30px;
+        width: 30px;
+        margin-top: 25px;
+    }
+    
+    .cross-icon.active{
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;   
+        }
+
+    .mobile-menu.active{
+        display: flex;
+    }
+
+    .main-content.active{
+        display: none;
+    }
+}
 /* TODO:
-- Header: Java Script.
-- Chba7: shdows in buttons. Split hero and Features section. some text animations [see CSS free template site for inspirstion].
+- links.
+- Chba7: shdows in buttons. Split hero and Features section (orange curves). Some text animations: handwriting of Explore a Medeiva.... [see CSS free template site for inspirstion].
 */
