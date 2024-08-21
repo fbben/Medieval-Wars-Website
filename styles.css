@@ -34,6 +34,10 @@ a {
     color: white;
 }
 
+.header ul a:hover {
+    color: #FAAB4E;
+}
+
 .download,
 .download-mw {
     background-color: #FAAB4E;
@@ -95,6 +99,12 @@ a {
     padding: 10px;
 }
 
+.download:hover,
+.download-mw:hover,
+.watch-trailer:hover, .hero img:hover{
+    filter: drop-shadow(0px 2px 5px #ffffffce);
+}
+
 .features {
     display: flex;
     flex-direction: column;
@@ -115,6 +125,10 @@ a {
     border-radius: 10px;
     filter: drop-shadow(2px 1px 4px #ffff);
     max-width: 100%;
+}
+
+.propertie img:hover {
+    filter: none;
 }
 
 .img-description {
@@ -173,10 +187,15 @@ a {
     height: 20px;
 }
 
+.contact p a:hover{
+    color: rgb(125, 163, 251);
+}
+
 .mobile-nav-bar,
 .mobile-menu {
     display: none;
 }
+
 
 @media (max-width: 600px) {
     .header {
@@ -194,24 +213,24 @@ a {
         height: 70px;
     }
 
-    .hamburger-icon{
+    .hamburger-icon {
         height: 40px;
         width: 40px;
         margin-top: 20px;
     }
 
-    .hamburger-icon.active{
+    .hamburger-icon.active {
         display: none;
     }
 
-    .cross-icon{
+    .cross-icon {
         display: none;
         height: 30px;
         width: 30px;
         margin-top: 25px;
     }
-    
-    .cross-icon.active{
+
+    .cross-icon.active {
         display: block;
     }
 
@@ -224,18 +243,20 @@ a {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        font-size: 20px;   
-        }
+        font-size: 20px;
+    }
 
-    .mobile-menu.active{
+    .mobile-menu.active {
         display: flex;
     }
 
-    .main-content.active{
+    /* .main-content.active{
         display: none;
-    }
+    } */
+
 }
+
 /* TODO:
 - links.
-- Chba7: shdows in buttons. Split hero and Features section (orange curves). Some text animations: handwriting of Explore a Medeiva.... [see CSS free template site for inspirstion].
+- Chba7:  Split hero and Features section (orange curves). Some text animations: handwriting of Explore a Medeiva.... [see CSS free template site for inspirstion].
 */
